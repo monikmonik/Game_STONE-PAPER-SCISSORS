@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gra</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <h1>Gra "Papier, kamień,nożyce"</h1>
-    <div class="contener">
-      <div class="select">
-        <p>Proszę wybierz:</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <img data-option="paper" src="src/papier.jpg" alt="" title="Paper" />
+<body>
+  <h1>Gra "Papier, kamień, nożyce"</h1>
+  <div class="container">
 
-        <img data-option="stone" src="src/kamien.jpg" alt="" title="Stone" />
-
-        <img
-          data-option="scissors"
-          src="src/nozyce.jpg"
-          alt=""
-          title="Scissors"
-        />
-      </div>
-
-      <div class="game">
-        <div class="choice">
-          <div class="comparison">
-            <div class="player">
-              <p>Twój wybór: <span data-summary="your-choice"></span></p>
-              <img data-option="paper" src="" alt="" title="Paper" />
-            </div>
-
-            <div class="ai">
-              <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
-              <img
-                data-option="paper"
-                src=""
-                alt=""
-                title="Paper"
-                class="hiden"
-              />
-            </div>
-          </div>
-          <h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
-        </div>
-
-        <div class="resault">
-          <p class="numbers">liczba rozegranych gier: <span>0</span></p>
-          <p class="wins">gry wygrane: <span>0</span></p>
-          <p class="losses">gry przegrane: <span>0</span></p>
-          <p class="draws">remisy: <span>0</span></p>
-        </div>
-      </div>
+    <div class="select">
+      <h3>Proszę wybierz:</h3>
+      <img data-option="paper" src="src/papier.jpg" alt="" title="Paper" />
+      <img data-option="stone" src="src/kamien.jpg" alt="" title="Stone" />
+      <img data-option="scissors" src="src/nozyce.jpg" alt="" title="Scissors" />
     </div>
-  </body>
+
+    <div class="game">
+
+      <div class="choice">
+        <div class="comparison">
+          <div class="player">
+            <h3>Twój wybór:</h3>
+            <img data-summary="your-choice" alt="" />
+          </div>
+          <div class="ai">
+            <h3>Wybór komputera:</h3>
+            <img data-summary="ai-choice" alt="" />
+          </div>
+        </div>
+          <button>Sprawdzam</button>
+          <h2>-<span data-summary="who-win"></span>-</h2>
+      </div>
+
+      <div class="results">
+        <p class="numbers">liczba rozegranych gier: <span>0</span></p>
+        <p class="wins">gry wygrane: <span>0</span></p>
+        <p class="losses">gry przegrane: <span>0</span></p>
+        <p class="draws">remisy: <span>0</span></p>
+      </div>
+
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+
 </html>
